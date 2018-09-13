@@ -25,6 +25,7 @@ public class Installer implements Runnable, WindowSystemListener {
   public void beforeLoad(WindowSystemEvent wse){
       WindowManager.getDefault().setRole("modules");
       WindowManager.getDefault().setRole("welcome");
+      WindowManager.getDefault().setRole("about");
       WindowManager.getDefault().removeWindowSystemListener(this);
   }
   

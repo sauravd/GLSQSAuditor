@@ -62,39 +62,47 @@ public final class WelcomeTopComponent extends TopComponent {
         jLabel2.setFont(new java.awt.Font("Verdana", Font.LAYOUT_LEFT_TO_RIGHT, 12));
         jLabel4.setFont(new java.awt.Font("Verdana", Font.LAYOUT_LEFT_TO_RIGHT, 12));
         jLabel5.setFont(new java.awt.Font("Verdana", Font.LAYOUT_LEFT_TO_RIGHT, 12));
+        jLabel14.setFont(new java.awt.Font("Verdana", Font.LAYOUT_LEFT_TO_RIGHT, 12));
         jLabel2.setBackground(Color.WHITE);       
         jLabel4.setBackground(Color.WHITE);       
         jLabel5.setBackground(Color.WHITE);       
         jLabel2.setText("<html><h3>"
-                +"Green Freight and Logistics Development in Mekong countries </h3>"
+                +"Green Freight and Logistics Development in Mekong countries</h3>"
                 +"<p>"
-                +"Freight transportation is critical to businesses, consumers and the world economy."
-                + "The freight sector moves vast volumes of goods, commodities, materials and food domestically"
-                + "and globally and is primary factor in economy and growth. But a goods movement comes with"
-                + "an impact on the global environment. It contributes a significant portion of air pollution"
-                + "and its contribution is expected to grow significantly in the coming years. Globally, carbon dioxide (CO)"
-                + "emissions from freight transport are growing more quickly than those from passenger vehicles. In particular,"
-                + "heavy duty vehicles are expected to be the largest emitter of CO2 from all transport modes by 2035."
+                +"Freight transportation is critical to businesses, consumers and the world economy.The freight sector<br>"
+                + "moves vast volumes of goods, commodities, materials and food domestically and globally and is primary<br>"
+                + "factor in economy and growth. But a goods movement comes with an impact on the global environment. It<br>"
+                + "contributes a significant portion of air pollution and its contribution is expected to grow significantly<br>"
+                + "in the coming years. Globally, carbon dioxide (CO) emissions from freight transport are growing more quickly<br>"
+                + "than those from passenger vehicles.In particular, heavy duty vehicles are expected to be the largest emitter<br>"
+                + "of CO2 from all transport modes by 2035.<br>"
                 + "</p>");
         
-        jLabel4.setText("<html><p>Transport accounts for at least one fourth of total energy consumption in Asian countries and"
-                + "other parts of the world. Freight transport is also the major consumer of oil, of which most comes from freight"
-                + "transport. The significant impact freight transport have on environment has led to several initiatives by "
-                + "governments and private companies.</p>"
-                + "<p> <br>"
-                + "With this backdrop, the Mekong Institute (MI) is implementing a three-year project on “Green Freight and Logistics"
-                + "Development in Mekong countries’ funded by the Republic of Korea through the Mekong-Korea Cooperation Fund(MKCF)."
-                + "The long-term objective of the project is to reduce the cost of logistics and transport to improve economic performance"
-                + "in the five countries in Cambodia, Lao PDR, Myanmar, Vietnam and Thailand (CLMVT). This will eventually aid the transport"
-                + "sector to increase its contribution to economic development in the Mekong countries as well reduce its carbon footprint.</p>"
+        jLabel4.setText("<html><p>Transport accounts for at least one fourth of total energy consumption in Asian countries and<br>"
+                + "other parts of the world. Freight transport is also the major consumer of oil, of which most comes from freight<br>"
+                + "transport.The significant impact freight transport have on environment has led to several initiatives by governments<br>"
+                + "and private companies.<br></p>"
+                + "<p><br>"
+                + "With this backdrop, the Mekong Institute (MI) is implementing a three-year project on<br>"
+                + "<b>'Green Freight<br> and Logistics Development in Mekong countries'</b> funded by the Republic of Korea through the<br>"
+                + "Mekong-Korea Cooperation Fund(MKCF). The long-term objective of the project is to reduce the cost of logistics and transport<br>"
+                + "to improve economic performance in the five countries in Cambodia, Lao PDR, Myanmar, Vietnam and Thailand (CLMVT).This will<br>"
+                + "eventually aid the transport sector to increase its contribution to economic development in the Mekong countries as well reduce<br>"
+                + "its carbon footprint.<br></p>"
                 + "</html>"        
         );
         jLabel5.setText("<html><p>"
-                +"Green freight and logistics development programs in the Mekong countries can help address many of these issues,"
-                + "helping LSPs to become more competitive, and in doing so aiding the transport sector to increase its contribution to"
-                + "economic development in the subregion as well as reduce its carbon footprint.</p>"
+                +"Green freight and logistics development programs in the Mekong countries can help address many of these issues,helping LSPs<br>"
+                + "to become more competitive, and in doing so aiding the transport sector to increase its contribution to economic development<br>"
+                + "in the subregion as well as reduce its carbon footprint.<br></p>"
                 +"</html>"
         );     
+        
+        jLabel14.setText("<html><p>"
+                +"<b>Green Mark</b> is, therefore, introduced to promote logistic companies to reduce carbon emissions and energy use from goods<br>"
+                + "transit with improving performance such as fuel-efficiency, effective transport operation, etc., It can be applied to a logistics<br>"
+                + "service provider or an industrial or manufacturer with in-house logistic activity.<br></p>"
+                +"</html>");
         
        
     }
@@ -107,6 +115,7 @@ public final class WelcomeTopComponent extends TopComponent {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -121,11 +130,12 @@ public final class WelcomeTopComponent extends TopComponent {
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sauravdahal/pictures/GMSmapv2.png"))); // NOI18N
         org.openide.awt.Mnemonics.setLocalizedText(jLabel1, org.openide.util.NbBundle.getMessage(WelcomeTopComponent.class, "WelcomeTopComponent.jLabel1.text")); // NOI18N
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sauravdahal/pictures/MI_LOGO.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sauravdahal/pictures/MI_LOGO_negative.png"))); // NOI18N
         org.openide.awt.Mnemonics.setLocalizedText(jLabel3, org.openide.util.NbBundle.getMessage(WelcomeTopComponent.class, "WelcomeTopComponent.jLabel3.text")); // NOI18N
 
         org.openide.awt.Mnemonics.setLocalizedText(jLabel2, org.openide.util.NbBundle.getMessage(WelcomeTopComponent.class, "WelcomeTopComponent.jLabel2.text")); // NOI18N
@@ -164,6 +174,8 @@ public final class WelcomeTopComponent extends TopComponent {
         org.openide.awt.Mnemonics.setLocalizedText(jLabel13, org.openide.util.NbBundle.getMessage(WelcomeTopComponent.class, "WelcomeTopComponent.jLabel13.text")); // NOI18N
         jLabel13.setToolTipText(org.openide.util.NbBundle.getMessage(WelcomeTopComponent.class, "WelcomeTopComponent.jLabel13.toolTipText")); // NOI18N
 
+        org.openide.awt.Mnemonics.setLocalizedText(jLabel14, org.openide.util.NbBundle.getMessage(WelcomeTopComponent.class, "WelcomeTopComponent.jLabel14.text")); // NOI18N
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -175,57 +187,55 @@ public final class WelcomeTopComponent extends TopComponent {
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 402, Short.MAX_VALUE)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE)
                             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(37, 37, 37)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel9)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel10)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel11)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel12)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel13))
-                                    .addComponent(jLabel8))))
-                        .addContainerGap())
+                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel14))
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel3))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel7))
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel6)
+                                .addComponent(jLabel7))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel9)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel10)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel11)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel12)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel13))
+                            .addComponent(jLabel8))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel4)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel8)))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel14))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel3)))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel6)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
+                .addComponent(jLabel8)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel11)
                     .addComponent(jLabel9)
@@ -234,23 +244,20 @@ public final class WelcomeTopComponent extends TopComponent {
                         .addComponent(jLabel10))
                     .addComponent(jLabel12)
                     .addComponent(jLabel13))
-                .addGap(435, 435, 435))
+                .addGap(150, 150, 150))
         );
+
+        jScrollPane1.setViewportView(jPanel1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1104, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(19, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -260,6 +267,7 @@ public final class WelcomeTopComponent extends TopComponent {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -269,6 +277,7 @@ public final class WelcomeTopComponent extends TopComponent {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
     @Override
     public void componentOpened() {

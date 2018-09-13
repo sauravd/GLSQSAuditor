@@ -7,6 +7,7 @@ package com.sauravdahal.control;
 
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.Font;
 import javax.swing.Action;
 import javax.swing.JButton;
 import org.netbeans.api.settings.ConvertAsProperties;
@@ -54,7 +55,10 @@ public final class ModulesTopComponent extends TopComponent {
             button.setPreferredSize(new Dimension(150,100));
             add(button);
         }
+         
     }
+    
+   
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -63,6 +67,8 @@ public final class ModulesTopComponent extends TopComponent {
      */
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+
+        setAutoscrolls(true);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

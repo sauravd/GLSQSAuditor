@@ -55,7 +55,7 @@ public final class IntermediateTopComponent extends TopComponent implements Acti
     
     @Override
     public void actionPerformed(ActionEvent e){
-        WindowManager.getDefault().setRole("Intermediate");
+        WindowManager.getDefault().setRole("intermediate");
     }
 
     /**
