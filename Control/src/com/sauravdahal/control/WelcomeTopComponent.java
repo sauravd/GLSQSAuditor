@@ -104,7 +104,20 @@ public final class WelcomeTopComponent extends TopComponent {
                 + "service provider or an industrial or manufacturer with in-house logistic activity.<br></p>"
                 +"</html>");
         
-       
+//        jLabel15.setText("<html><p>"
+//                +"<b>Disclaimer:</b><i style='color:red;'>This carboon emission calculator is not designed to be 100% accurate as there are too many variables required<br>"
+//                + "in order to give a reliable emissions total. It is simply to give you an indication on how much carbon dioxide you generate and<br>"
+//                + "how many trees it would take to offset those emissions.<br></p></i>"
+//                + "<p><i style='color:red;'>Bear in mind that just about all we do in modern life produces a carbon footprint, well over and above what occurs in the natural<br>"
+//                + "world. For instance, the computer you are viewing this on was produced using processes that create carbon emissions. Offsetting should<br"
+//                + "be seen as a last resort; reduction in consumption is the first line of defense against global warming.</i>"
+//                + "</p>"                
+//                +"</html>");
+        
+       jLabel15.setText("<html><p>"
+                +"<b>Note:</b><i style='color:red;'>Emission factors and emission quantification methodologies are taken from various sources, the most notable ones are the WRI and WBCSD GHG Protocol,<br>"
+               + "the IPCC Guidelines for National Greenhouse Gas Inventories,USEPA AP-42, UNEP-TNT Fleet Management Toolkit.<br></p></i>"    
+                +"</html>");
     }
 
     /**
@@ -131,6 +144,7 @@ public final class WelcomeTopComponent extends TopComponent {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sauravdahal/pictures/GMSmapv2.png"))); // NOI18N
         org.openide.awt.Mnemonics.setLocalizedText(jLabel1, org.openide.util.NbBundle.getMessage(WelcomeTopComponent.class, "WelcomeTopComponent.jLabel1.text")); // NOI18N
@@ -176,6 +190,8 @@ public final class WelcomeTopComponent extends TopComponent {
 
         org.openide.awt.Mnemonics.setLocalizedText(jLabel14, org.openide.util.NbBundle.getMessage(WelcomeTopComponent.class, "WelcomeTopComponent.jLabel14.text")); // NOI18N
 
+        org.openide.awt.Mnemonics.setLocalizedText(jLabel15, org.openide.util.NbBundle.getMessage(WelcomeTopComponent.class, "WelcomeTopComponent.jLabel15.text")); // NOI18N
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -187,12 +203,17 @@ public final class WelcomeTopComponent extends TopComponent {
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel14))
-                        .addGap(24, 24, 24)
-                        .addComponent(jLabel3))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE)
+                                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel14))
+                                .addGap(24, 24, 24)
+                                .addComponent(jLabel3))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel15)
+                                .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -223,7 +244,9 @@ public final class WelcomeTopComponent extends TopComponent {
                         .addGap(18, 18, 18)
                         .addComponent(jLabel5)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel14))
+                        .addComponent(jLabel14)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel15))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
@@ -268,6 +291,7 @@ public final class WelcomeTopComponent extends TopComponent {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

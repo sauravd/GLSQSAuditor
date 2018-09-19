@@ -3,52 +3,61 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.sauravdahal.emissioncalculator;
+package com.sauravdahal.control;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import javax.swing.Action;
+import javax.swing.JButton;
 import org.netbeans.api.settings.ConvertAsProperties;
 import org.openide.awt.ActionID;
 import org.openide.awt.ActionReference;
-import org.openide.awt.ActionRegistration;
+import org.openide.filesystems.FileObject;
+import org.openide.filesystems.FileUtil;
 import org.openide.windows.TopComponent;
 import org.openide.util.NbBundle.Messages;
-import org.openide.windows.WindowManager;
 
 /**
  * Top component which displays something.
  */
 @ConvertAsProperties(
-        dtd = "-//com.sauravdahal.emissioncalculator//EmissionCalculator//EN",
+        dtd = "-//com.sauravdahal.control//WorkflowControl//EN",
         autostore = false
 )
 @TopComponent.Description(
-        preferredID = "EmissionCalculatorTopComponent",
+        preferredID = "WorkflowControlTopComponent",
         //iconBase="SET/PATH/TO/ICON/HERE", 
         persistenceType = TopComponent.PERSISTENCE_ALWAYS
 )
-@TopComponent.Registration(roles={"emissioncalculator"},mode = "editor", openAtStartup = true)
-@ActionID(category = "Predict", id = "com.sauravdahal.emissioncalculator.EmissionCalculatorTopComponent")
-@ActionRegistration(displayName = "#CTL_EmissionCalculator")
-@ActionReference(path = "Menu/Window", position = 250)
-//@TopComponent.OpenActionRegistration(
-//        displayName = "#CTL_EmissionCalculatorAction",
-//        preferredID = "EmissionCalculatorTopComponent"
-//)
-@Messages({"CTL_EmissionCalculator=Switch to Emission Calculator Window",
-    "CTL_EmissionCalculatorAction=EmissionCalculator",
-    "CTL_EmissionCalculatorTopComponent=EmissionCalculator Window",
-    "HINT_EmissionCalculatorTopComponent=This is a EmissionCalculator window"
+@TopComponent.Registration(mode = "editor", openAtStartup = true)
+@ActionID(category = "Window", id = "com.sauravdahal.control.WorkflowControlTopComponent")
+@ActionReference(path = "Menu/Window" /*, position = 333 */)
+@TopComponent.OpenActionRegistration(
+        displayName = "#CTL_WorkflowControlAction",
+        preferredID = "WorkflowControlTopComponent"
+)
+@Messages({
+    "CTL_WorkflowControlAction=WorkflowControl",
+    "CTL_WorkflowControlTopComponent=WorkflowControl Window",
+    "HINT_WorkflowControlTopComponent=This is a WorkflowControl window"
 })
-public final class EmissionCalculatorTopComponent extends TopComponent implements ActionListener {
-    @Override
-    public void actionPerformed(ActionEvent e){
-        WindowManager.getDefault().setRole("emissioncalculator");
-    }
-    public EmissionCalculatorTopComponent() {
+public final class WorkflowControlTopComponent extends TopComponent {
+
+    public WorkflowControlTopComponent() {
         initComponents();
-        setName(Bundle.CTL_EmissionCalculatorTopComponent());
-        setToolTipText(Bundle.HINT_EmissionCalculatorTopComponent());
+        setName(Bundle.CTL_WorkflowControlTopComponent());
+        setToolTipText(Bundle.HINT_WorkflowControlTopComponent());
+        setLayout(new FlowLayout(FlowLayout.LEFT, 14, 10));
+        try {
+            for(FileObject fo:FileUtil.getConfigFile("Action/Predict").getChildren()){
+            Action action = FileUtil.getConfigObject(fo.getPath(), Action.class);
+            JButton button = new JButton(action);
+            button.setPreferredSize(new Dimension(200, 100));
+            add(button);            
+        }
+        } catch (Exception e) {
+        }
+        
 
     }
 

@@ -107,7 +107,12 @@ public final class AboutTopComponent extends TopComponent {
                     + "</ul>"
                     + "All the values are in tonne/year, the higher the value of CO2 the more the carbon footprint and lesser the better<br>"
                     + "</p></li>"
-                    +"</ul>" 
+                    +"</ul>"   
+                 + "<li><b>Disclaimer</li></b>"
+                + "<ul>"
+                 + "<li><p style='color:red;'>This software is not designed to be 100% accurate as there are too many variable required in order to give a<br>"
+                    + "reliable emissions total. It is simply to give you an indication on how much<b> Green House Gas (GHG)</b> you generate.<br></p?"
+                + "</ul>"                   
                  + "</ol>"
                  + "</html>");
     }
