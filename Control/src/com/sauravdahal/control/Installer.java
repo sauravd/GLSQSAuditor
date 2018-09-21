@@ -23,9 +23,9 @@ public class Installer implements Runnable, WindowSystemListener {
   
   @Override
   public void beforeLoad(WindowSystemEvent wse){
-      WindowManager.getDefault().setRole("workflowcontrol");
+      //WindowManager.getDefault().setRole("workflowcontrol");
       WindowManager.getDefault().setRole("welcome");
-      WindowManager.getDefault().setRole("about");     
+      WindowManager.getDefault().setRole("about");       
       WindowManager.getDefault().removeWindowSystemListener(this);
   }
   

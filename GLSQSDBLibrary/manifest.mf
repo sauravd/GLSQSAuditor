@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+AutoUpdate-Show-In-Client: true
+OpenIDE-Module: com.sauravdahal.glsqsdatabase
+OpenIDE-Module-Localizing-Bundle: com/sauravdahal/glsqsdatabase/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

@@ -5,15 +5,11 @@
  */
 package com.sauravdahal.kpiassessor;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import org.netbeans.api.settings.ConvertAsProperties;
 import org.openide.awt.ActionID;
 import org.openide.awt.ActionReference;
-import org.openide.awt.ActionRegistration;
 import org.openide.windows.TopComponent;
 import org.openide.util.NbBundle.Messages;
-import org.openide.windows.WindowManager;
 
 /**
  * Top component which displays something.
@@ -29,24 +25,18 @@ import org.openide.windows.WindowManager;
 )
 @TopComponent.Registration(roles={"kpiassessor"},mode = "editor", openAtStartup = true)
 @ActionID(category = "Predict", id = "com.sauravdahal.kpiassessor.KPIAssessorTopComponent")
-@ActionRegistration(displayName = "#CTL_KPIAssessorWindow")
-@ActionReference(path = "Menu/Window", 
-        position = 250)
-//@TopComponent.OpenActionRegistration(
-//        displayName = "#CTL_KPIAssessorAction",
-//        preferredID = "KPIAssessorTopComponent"
-//)
-
-@Messages({"CTL_KPIAssessorWindow=Switch to KPI Assessor Window",
+@ActionReference(path = "Menu/Window" /*, position = 333 */)
+@TopComponent.OpenActionRegistration(
+        displayName = "#CTL_KPIAssessorAction",
+        preferredID = "KPIAssessorTopComponent"
+)
+@Messages({
     "CTL_KPIAssessorAction=KPIAssessor",
     "CTL_KPIAssessorTopComponent=KPIAssessor Window",
     "HINT_KPIAssessorTopComponent=This is a KPIAssessor window"
 })
-public final class KPIAssessorTopComponent extends TopComponent implements ActionListener {
-    @Override
-    public void actionPerformed(ActionEvent e){
-        WindowManager.getDefault().setRole("kpiassessor");
-    }
+public final class KPIAssessorTopComponent extends TopComponent {
+
     public KPIAssessorTopComponent() {
         initComponents();
         setName(Bundle.CTL_KPIAssessorTopComponent());

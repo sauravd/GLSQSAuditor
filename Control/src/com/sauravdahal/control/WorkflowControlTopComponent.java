@@ -48,16 +48,12 @@ public final class WorkflowControlTopComponent extends TopComponent {
         setName(Bundle.CTL_WorkflowControlTopComponent());
         setToolTipText(Bundle.HINT_WorkflowControlTopComponent());
         setLayout(new FlowLayout(FlowLayout.LEFT, 14, 10));
-        try {
-            for(FileObject fo:FileUtil.getConfigFile("Action/Predict").getChildren()){
-            Action action = FileUtil.getConfigObject(fo.getPath(), Action.class);
-            JButton button = new JButton(action);
-            button.setPreferredSize(new Dimension(200, 100));
-            add(button);            
-        }
-        } catch (Exception e) {
-        }
-        
+        for (FileObject fo : FileUtil.getConfigFile("Actions/Predict").getChildren()) {
+        Action action = FileUtil.getConfigObject(fo.getPath(), Action.class);
+        JButton button = new JButton(action);
+        button.setPreferredSize(new Dimension(150,100));
+        add(button);
+    }
 
     }
 

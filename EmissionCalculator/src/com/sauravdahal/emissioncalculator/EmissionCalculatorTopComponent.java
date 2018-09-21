@@ -5,15 +5,11 @@
  */
 package com.sauravdahal.emissioncalculator;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import org.netbeans.api.settings.ConvertAsProperties;
 import org.openide.awt.ActionID;
 import org.openide.awt.ActionReference;
-import org.openide.awt.ActionRegistration;
 import org.openide.windows.TopComponent;
 import org.openide.util.NbBundle.Messages;
-import org.openide.windows.WindowManager;
 
 /**
  * Top component which displays something.
@@ -29,22 +25,18 @@ import org.openide.windows.WindowManager;
 )
 @TopComponent.Registration(roles={"emissioncalculator"},mode = "editor", openAtStartup = true)
 @ActionID(category = "Predict", id = "com.sauravdahal.emissioncalculator.EmissionCalculatorTopComponent")
-@ActionRegistration(displayName = "#CTL_EmissionCalculator")
-@ActionReference(path = "Menu/Window", position = 250)
-//@TopComponent.OpenActionRegistration(
-//        displayName = "#CTL_EmissionCalculatorAction",
-//        preferredID = "EmissionCalculatorTopComponent"
-//)
-@Messages({"CTL_EmissionCalculator=Switch to Emission Calculator Window",
+@ActionReference(path = "Menu/Window" /*, position = 333 */)
+@TopComponent.OpenActionRegistration(
+        displayName = "#CTL_EmissionCalculatorAction",
+        preferredID = "EmissionCalculatorTopComponent"
+)
+@Messages({
     "CTL_EmissionCalculatorAction=EmissionCalculator",
     "CTL_EmissionCalculatorTopComponent=EmissionCalculator Window",
     "HINT_EmissionCalculatorTopComponent=This is a EmissionCalculator window"
 })
-public final class EmissionCalculatorTopComponent extends TopComponent implements ActionListener {
-    @Override
-    public void actionPerformed(ActionEvent e){
-        WindowManager.getDefault().setRole("emissioncalculator");
-    }
+public final class EmissionCalculatorTopComponent extends TopComponent {
+
     public EmissionCalculatorTopComponent() {
         initComponents();
         setName(Bundle.CTL_EmissionCalculatorTopComponent());
@@ -64,11 +56,11 @@ public final class EmissionCalculatorTopComponent extends TopComponent implement
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 901, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 558, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
