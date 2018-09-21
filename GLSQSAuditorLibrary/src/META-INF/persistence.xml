@@ -6,13 +6,13 @@
     <class>com.sauravdahal.dbentityclass.Wastemgmt</class>
     <class>com.sauravdahal.dbentityclass.Fuelprice</class>
     <class>com.sauravdahal.dbentityclass.Company</class>
-    <class>com.sauravdahal.dbentityclass.Vehicle</class>
     <class>com.sauravdahal.dbentityclass.Fueltype</class>
     <class>com.sauravdahal.dbentityclass.Maintenance</class>
     <class>com.sauravdahal.dbentityclass.Organization</class>
-    <class>com.sauravdahal.dbentityclass.Emissions</class>
     <class>com.sauravdahal.dbentityclass.Driver</class>
     <class>com.sauravdahal.dbentityclass.Procurement</class>
+    <class>com.sauravdahal.dbentityclass.Vehicle</class>
+    <class>com.sauravdahal.dbentityclass.Emissions</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:derby:GLSQSA_DB;create=true"/>
       <property name="javax.persistence.jdbc.user" value="root"/>

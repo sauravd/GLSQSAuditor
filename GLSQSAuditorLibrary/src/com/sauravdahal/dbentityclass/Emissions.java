@@ -28,6 +28,9 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Emissions.findAll", query = "SELECT e FROM Emissions e")
     , @NamedQuery(name = "Emissions.findByEid", query = "SELECT e FROM Emissions e WHERE e.eid = :eid")
     , @NamedQuery(name = "Emissions.findByVehicletype", query = "SELECT e FROM Emissions e WHERE e.vehicletype = :vehicletype")
+    , @NamedQuery(name = "Emissions.findByVehicleid", query = "SELECT e FROM Emissions e WHERE e.vehicleid = :vehicleid")
+    , @NamedQuery(name = "Emissions.findByEmissionYear", query = "SELECT e FROM Emissions e WHERE e.emissionYear = :emissionYear")
+    , @NamedQuery(name = "Emissions.findByEmissionMonth", query = "SELECT e FROM Emissions e WHERE e.emissionMonth = :emissionMonth")
     , @NamedQuery(name = "Emissions.findByCo2", query = "SELECT e FROM Emissions e WHERE e.co2 = :co2")
     , @NamedQuery(name = "Emissions.findByCo", query = "SELECT e FROM Emissions e WHERE e.co = :co")
     , @NamedQuery(name = "Emissions.findByVoc", query = "SELECT e FROM Emissions e WHERE e.voc = :voc")
@@ -45,6 +48,12 @@ public class Emissions implements Serializable {
     private Integer eid;
     @Column(name = "VEHICLETYPE")
     private String vehicletype;
+    @Column(name = "VEHICLEID")
+    private Integer vehicleid;
+    @Column(name = "EMISSION_YEAR")
+    private Integer emissionYear;
+    @Column(name = "EMISSION_MONTH")
+    private String emissionMonth;
     // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
     @Column(name = "CO2")
     private Double co2;
@@ -82,6 +91,30 @@ public class Emissions implements Serializable {
 
     public void setVehicletype(String vehicletype) {
         this.vehicletype = vehicletype;
+    }
+
+    public Integer getVehicleid() {
+        return vehicleid;
+    }
+
+    public void setVehicleid(Integer vehicleid) {
+        this.vehicleid = vehicleid;
+    }
+
+    public Integer getEmissionYear() {
+        return emissionYear;
+    }
+
+    public void setEmissionYear(Integer emissionYear) {
+        this.emissionYear = emissionYear;
+    }
+
+    public String getEmissionMonth() {
+        return emissionMonth;
+    }
+
+    public void setEmissionMonth(String emissionMonth) {
+        this.emissionMonth = emissionMonth;
     }
 
     public Double getCo2() {

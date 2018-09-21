@@ -42,7 +42,9 @@ import javax.xml.bind.annotation.XmlRootElement;
     , @NamedQuery(name = "Vehicle.findByVehAvgIdlingTime", query = "SELECT v FROM Vehicle v WHERE v.vehAvgIdlingTime = :vehAvgIdlingTime")
     , @NamedQuery(name = "Vehicle.findByVehOperatingHrs", query = "SELECT v FROM Vehicle v WHERE v.vehOperatingHrs = :vehOperatingHrs")
     , @NamedQuery(name = "Vehicle.findByVehTirePressure", query = "SELECT v FROM Vehicle v WHERE v.vehTirePressure = :vehTirePressure")
-    , @NamedQuery(name = "Vehicle.findByVehRefrigerentType", query = "SELECT v FROM Vehicle v WHERE v.vehRefrigerentType = :vehRefrigerentType")})
+    , @NamedQuery(name = "Vehicle.findByVehRefrigerentType", query = "SELECT v FROM Vehicle v WHERE v.vehRefrigerentType = :vehRefrigerentType")
+    , @NamedQuery(name = "Vehicle.findByVehListYear", query = "SELECT v FROM Vehicle v WHERE v.vehListYear = :vehListYear")
+    , @NamedQuery(name = "Vehicle.findByVehListMonth", query = "SELECT v FROM Vehicle v WHERE v.vehListMonth = :vehListMonth")})
 public class Vehicle implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -84,6 +86,10 @@ public class Vehicle implements Serializable {
     private Double vehTirePressure;
     @Column(name = "VEH_REFRIGERENT_TYPE")
     private String vehRefrigerentType;
+    @Column(name = "VEH_LIST_YEAR")
+    private Integer vehListYear;
+    @Column(name = "VEH_LIST_MONTH")
+    private String vehListMonth;
 
     public Vehicle() {
     }
@@ -226,6 +232,22 @@ public class Vehicle implements Serializable {
 
     public void setVehRefrigerentType(String vehRefrigerentType) {
         this.vehRefrigerentType = vehRefrigerentType;
+    }
+
+    public Integer getVehListYear() {
+        return vehListYear;
+    }
+
+    public void setVehListYear(Integer vehListYear) {
+        this.vehListYear = vehListYear;
+    }
+
+    public String getVehListMonth() {
+        return vehListMonth;
+    }
+
+    public void setVehListMonth(String vehListMonth) {
+        this.vehListMonth = vehListMonth;
     }
 
     @Override
